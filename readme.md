@@ -7,7 +7,7 @@ pip install librosa numpy scikit-learn joblib requests soundfile
 
 ### 2. Build Database
 ```bash
-# Option A: Use Deezer Chart (easiest)
+# Option A: Use Deezer Chart
 python build_deezer_db.py --source chart --max-tracks 200
 
 # Option B: Use specific playlists
@@ -22,12 +22,10 @@ python build_deezer_db.py --source genre --ids 132 152
 python build_index.py
 ```
 
-### 4. Query!
+### 4. Query
 ```bash
 python query_script.py your_song.mp3
 ```
-
-That's it! No API keys, no authentication, no hassle.
 
 ## Available Options
 
